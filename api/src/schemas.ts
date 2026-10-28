@@ -11,3 +11,5 @@ export const analysisSchema = z.object({
 })
 
 export type Analysis = z.infer<typeof analysisSchema>
+export const statusSchema = z.enum(["TODO", "IN_PROGRESS", "PR_SENT"])
+export type Status = z.infer<typeof statusSchema>
