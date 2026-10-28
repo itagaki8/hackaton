@@ -42,3 +42,10 @@ export async function fetchIssue(issueUrl: string): Promise<GithubIssue> {
     number: Number(number),
   }
 }
+
+export function normalizeIssueUrl(issueUrl: string): string | null {
+  const match = issueUrl.match(ISSUE_URL)
+  if (!match) return null
+  const [, owner, repo, number] = match
+  return `https://github.com/${owner.toLowerCase()}/${repo.toLowerCase()}/issues/${number}`
+}
