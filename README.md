@@ -74,7 +74,7 @@ Créez le fichier `api/.env` :
 
 ```env
 GEMINI_API_KEY=votre_cle_api_gemini
-AI_MODEL=gemma-3-27b-it
+AI_MODEL=gemini-3.5-flash-lite
 PORT=3001
 ```
 

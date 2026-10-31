@@ -9,7 +9,7 @@ export const statusLabels: Record<Status, string> = {
 }
 
 export const difficultyStyles: Record<Difficulty, string> = {
-  facile: "bg-green-100 text-green-800",
-  moyen: "bg-amber-100 text-amber-800",
-  difficile: "bg-red-100 text-red-800",
+  facile: "border border-emerald-200 bg-emerald-50 text-emerald-700",
+  moyen: "border border-amber-200 bg-amber-50 text-amber-700",
+  difficile: "border border-rose-200 bg-rose-50 text-rose-700",
 }
